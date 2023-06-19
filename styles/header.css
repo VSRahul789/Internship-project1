@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+header{
+    /* position:fixed; */
+    background-color: #fff;
+    width: 100vw;
+    scrollbar-gutter: stable;
+    /* overflow-x: hidden; */
+}
+.timeings{
+    width: 100%;
+    height: 28px;
+    padding: 4px 0px 4px 8px;
+    margin: 0px;
+    background-color: orange;
+}
+
+.timeings .timeline{
+    color: cadetblue;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 1rem;
+    color: rgb(0, 179, 255);
+    transition: all 0.3s ease 0s;
+    padding: 16px;
+}
+
+a:hover{
+    color: orange;
+    scale: 1.1;
+}
+
+a:active{
+    color: rgba(255, 166, 0, 0.616);
+    scale: 0.9;
+}
+/* 
+header{
+    position: relative;
+    padding: 0 2rem;
+} */
+
+.navbar{
+    width: 100%;
+    height: 110px;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .navbar .logo a img{
+    width:"90px";
+    height:"90px";
+} */
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle-btn{
+    color: orange;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    padding-right: 1rem;
+}
+
+.donate-btn{
+    background-color: rgb(9, 255, 0);
+    padding: 10px 14px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+.donate-btn:hover{
+    scale: 1.1;
+    background-color: rgba(9, 255, 0, 0.6);
+}
+
+.donate-btn:active{
+    scale: 0.90;
+}
+
+
+/* Dropdown Menu */
+.dropdown{
+    display: none;
+    position: absolute;
+    right: 4rem;
+    top: 60px;
+    height: 0px;
+    width: 300px;
+    background-color: rgba(108, 108, 108, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+
+.dropdown li{
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown.open{
+    height: 366px;
+}
+
+.dropdown .donate-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsive Design */
+
+@media (max-width:992px) {
+    .navbar .links,
+    .navbar .donate-btn{
+        display: none;
+    }
+    .navbar .toggle-btn{
+        display: block;
+    }
+
+    .dropdown{
+        display: block;
+    }
+}
+
+@media (max-width:576px){
+    .dropdown{
+        left: 2rem;
+        width: unset;
+    }
+}

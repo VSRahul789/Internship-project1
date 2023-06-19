@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+main{
+    font-size: 62.5%;
+    color:rgb(51, 51, 51);
+    width: 100vw;
+    padding-top: 1.3rem;
+    scrollbar-gutter: stable;
+    /* overflow-x: hidden; */
+}
+
+.gallery-landing-page{
+    background-color: green;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 3.25rem;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.gallery-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.img-option{
+    width: 20rem;
+    height: 19rem;
+    transition: all 0.4s ease-out 0s;
+    border-radius: 10px;
+    /* opacity: 0.6; */
+}
+
+
+.shelter{
+    display: inline-block;
+    position: relative;
+}
+
+.shelter:hover .img-option{
+    scale: 1.1;
+}
+
+.wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.234); */
+    opacity: 0.78;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-out 0s;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    
+    font-size: 1.6rem;
+}
+
+.shelter:hover .wrapper{
+    display: none;
+}

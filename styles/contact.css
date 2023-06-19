@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+main{
+    font-size: 62.5%;
+    color:rgb(51, 51, 51);
+    width: 100vw;
+    padding-top: 1.3rem;
+    scrollbar-gutter: stable;
+    /* overflow-x: hidden; */
+}
+
+.landing{
+    /* background-image: url('/logos/content-background-image');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    background-color: rgba(163, 163, 163, 0.504);
+    opacity: 0.8; */
+    background-color: green;
+    text-align: center;
+}
+
+.landing-head1{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    color: #fff;
+}
+
+.landing-p-text{
+    font-family: 'Roboto+Mono',sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+/* Contact container */
+
+.contacts-container{
+    padding: 3rem;
+}
+
+form{
+    width: 90%;
+    max-width: 400px;
+}
+
+.input-contents{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid green;
+    outline: 0;
+    color: orange;
+    background: transparent;
+    font-size: 1.5rem;
+    /* box-shadow: 2px 2px 15px green; */
+    border-radius: 5px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+label{
+    position: absolute;
+    height: 100%;
+    top: 0.4rem;
+    left: 0.6rem;
+    padding: 2px;
+    color: orange;
+    font-size: 1.4rem;
+    transition: all 0.2s ease-in 0s;
+}
+
+.contacts-container button{
+    padding: 10px 0;
+    background-color: rgb(138, 237, 138);
+    outline: none;
+    /* background: transparent; */
+    border: 1px solid #fff;
+    cursor: pointer;
+    width: 100%;
+    /* box-shadow: 1px 1px 15px rgb(161, 179, 156); */
+    transition: all 0.14s ease-in 0s;
+    color: orange;
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.contacts-container button:hover{
+    background: transparent;
+    box-shadow: 1.2px 1.2px 15px rgb(114, 233, 114);
+    scale: 1.1;
+    font-weight: 700;
+    color: orangered;
+
+}
+
+.contacts-container button:active{
+    box-shadow: 2.3px 2.3px 16px rgb(56, 255, 56);
+    scale: 0.97;
+}
+
+input:focus~label,
+input:valid~label{
+    font-size: 1rem;
+    top: -1.5rem;
+    left: 0rem;
+    color: orangered;
+}
+textarea:focus~label,
+textarea:valid~label{
+    font-size: 1rem;
+    top: -1.6rem;
+    left: 0rem;
+    color: orangered;
+}
+
+input:focus{
+    box-shadow: 1px 1px 15px green;
+    border: none;
+}
+textarea:focus{
+    box-shadow: 1px 1px 15px green;
+    border: none;
+}
+
+/* Maps */
+
+.maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: rgb(243, 250, 255);
+    
+}
+
+iframe{
+    box-shadow: 2px 2px 10px rgb(156, 209, 255);
+    border-radius: 12px;
+}
