@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+main{
+    font-size: 62.5%;
+    color:rgb(51, 51, 51);
+    width: 100vw;
+    padding-top: 1.3rem;
+    scrollbar-gutter: stable;
+    /* overflow-x: hidden; */
+}
+
+.donate-landing{
+    padding-bottom: 4rem;
+    background-image: url(/WeSaveAnimals/logos/donate-page-landing.jpg);
+    opacity: 0.8;
+    height: 80vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.landing-text{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    /* background-color: green; */
+    padding: 2rem;
+    text-align: center;
+    padding-top: 60vh;
+    color: orange;
+}
+
+/* Donate text part */
+
+.donate-context{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color:whitesmoke;
+}
+
+.text-part-1{
+    display: inline-block;
+    width: 50%;
+    padding: 2rem;
+}
+
+.text-part-1 .context-head2{
+    display: inline-block;
+    color: orange;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.text-part-1 .p-text1{
+    display: inline-block;
+    font-family: 'Roboto+Mono',sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    /* text-align: center; */
+}
+
+.p-text .lists .p-1{
+    font-family: 'Roboto+Mono',sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 2rem;
+}
+
+.p-1 i{
+    color: green;
+}
+
+@media(max-width:576px) {
+    .donate-context{
+        padding: 0px;
+        justify-content: space-evenly;
+
+    }
+    .text-part-1{
+        padding: 2rem;
+        /* text-align: center; */
+        width: 100%;
+    }
+}
+
+/* Donate Main Part */
+
+.main-part{
+    display: inline-block;
+    width: 38%;
+    padding: 2rem;
+    border: 2px solid green;
+    border-radius: 12px;
+    transition: all 0.05s ease-in 0s;
+}
+
+.main-part:hover{
+    box-shadow: 2px 2px 10px greenyellow;
+    border: none;
+}
+
+.text-part-2 .text-head2{
+    /* display: inline-block; */
+    color: orange;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.text-part-2, 
+.donation-part .p-text2{
+    text-align: center;
+    font-family: 'Roboto+Mono',sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.donation-part .p-text2 span{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.donation-content{
+    text-align: center;
+    padding: 10px;
+}
+
+.donation-content .donation-amt{
+    width: 300px;
+    height: 40px;
+    border: 1px solid greenyellow;
+    font-size: 1.6rem;
+}
+
+.donation-content button{
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: aliceblue;
+    color: green;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    transition: all 0.1s ease-in 0s;
+}
+
+.donation-content button:hover{
+    scale: 1.05;
+    box-shadow: inset 0.3px 0.4px 10px rgb(189, 249, 98);
+    border: none;
+}
+
+.donation-content button:active{
+    scale: 0.95;
+    box-shadow: inset 0.2px 0.3px 10px greenyellow;
+    border: none;
+}
+
+@media(max-width:576px) {
+    .main-part{
+        width: 90%;
+    }
+
+    .donation-content .donation-amt{
+        width: 250px;
+    }
+
+    .donation-content button{
+        width: 60%;
+    }
+}
+
+.change-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* height: 50%; */
+    text-align: center;
+}
+
+.another-container{
+    color: rgb(255, 176, 29);
+    width: 50%;
+    padding: 3rem;
+}
+
+@media(max-width:576px) {
+    .another-container{
+        width: 100%;
+    }
+}
+
+.change-head2{
+    line-height: 2rem;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.p-text3{
+    line-height: 1.5rem;
+    font-family: 'Roboto-mono';
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+/* Donate Changes Container */
+
+.donate-changes-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.container-1{
+    width: 30%;
+    text-align: center;
+    border: 2px solid green;
+    padding: 2rem;
+    /* height: min-content; */
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.container-1:hover{
+    scale: 1.07;
+    box-shadow: 2px 2px 10px green;
+    border: none;
+}
+
+@media(max-width:576px) {
+    .donate-changes-container{
+        padding: 0.4rem;
+    }
+    .container-1{
+        width: 87%;
+        padding: 0rem;
+    }
+}
+
+.container-1 .change-head3{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: green;
+}
+
+.container-1 .change-head3 span{
+    color: orange;
+}
+
+.container-1 .change-p1{
+    font-family: 'Roboto+Mono',sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}

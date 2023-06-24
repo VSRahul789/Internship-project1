@@ -129,7 +129,7 @@ input:focus{
     border: none;
 }
 textarea:focus{
-    box-shadow: 1px 1px 15px green;
+    box-shadow: 2px 1px 15px green;
     border: none;
 }
 
