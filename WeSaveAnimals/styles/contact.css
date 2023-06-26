@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 main{
     font-size: 62.5%;
@@ -33,7 +34,7 @@ main{
 }
 
 .landing-p-text{
-    font-family: 'Roboto+Mono',sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-weight: 500;
     font-size: 1.6rem;
     color: #fff;
